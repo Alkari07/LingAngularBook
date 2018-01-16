@@ -1,6 +1,6 @@
 //imports the component decorator from angular core
 import {Component} from '@angular/core'
-import {ProductService} from './product/product.service'
+import {ProductService} from './product.service'
 
 @Component({
     //selector: puts the component in a custom "products" tag
