@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import {ProductsComponent} from './products.component';
+
+//@NgModule decorator is what makes this a module
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, ProductsComponent
   ],
   imports: [
     BrowserModule
