@@ -7,6 +7,7 @@ import { ProductService } from './product.service';
   selector: 'app-root',
   //binding with moustache braces is called "interpolation"
   template: `<h1>{{title}}</h1>
+  <img src = "{{imageUrl}}"/>
   <products></products>`,
   providers: [ProductService]
 })
@@ -14,4 +15,5 @@ export class AppComponent {
   title = 'Hello World Test';
   //can also explicitly declare the type like:
   //title: string = 'Hello World'
+  imageUrl: string = "https://www.w3schools.com/html/pic_mountain.jpg";
 }

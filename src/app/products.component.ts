@@ -1,6 +1,6 @@
 //imports the component decorator from angular core
 import {Component} from '@angular/core'
-import {ProductService} from './product.service'
+import {ProductService} from './product/product.service'
 
 @Component({
     //selector: puts the component in a custom "products" tag
@@ -18,6 +18,7 @@ export class ProductsComponent {
     products;
 
     //product service is injected into the constructor
+    //BUT, to use it, it must first be linked for DI in app.components
     constructor (productService : ProductService) {
         this.products = productService.getProducts();
     }
